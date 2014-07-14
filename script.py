@@ -6,7 +6,6 @@ from bs4 import BeautifulSoup
 BASE_URL = 'http://en.wikipedia.org/w/api.php?format=json&action=query&'
 EXCEPTIONS = ['list','refer','these','things']
 
-
 def get_random_page():
 	rand_url = BASE_URL + '&list=random&rnnamespace=0'
 	rand_response = requests.get(rand_url).json()
