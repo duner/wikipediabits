@@ -72,4 +72,5 @@ def main():
 			found_page = True
 			post_tweet(content)
 
-main()
+if __name__ == "__main__":
+	main()
