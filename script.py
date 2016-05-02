@@ -13,7 +13,7 @@ REQUEST_HEADER = {
 }
 BASE_URL = 'http://en.wikipedia.org/w/api.php?format=json&action=query&'
 EXCEPTIONS = ['list','refer','these','things']
-ODDS = 3 if os.environ.get("ON_HEROKU", False) else 1
+ODDS = 4 if os.environ.get("ON_HEROKU", False) else 1
 
 auth = tweepy.OAuthHandler(
 	os.environ.get('TWITTER_CONSUMER_KEY'),
